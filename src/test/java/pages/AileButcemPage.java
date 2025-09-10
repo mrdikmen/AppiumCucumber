@@ -1,3 +1,4 @@
+
 package pages;
 
 import io.appium.java_client.MobileElement;
@@ -9,23 +10,22 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.FieldDecorator;
 import utilities.Driver;
 
-import javax.xml.xpath.XPath;
 import java.time.Duration;
 
-public class AileButcePage {
-
-    public AileButcePage(){
-
+public class AileButcemPage {
+    public AileButcemPage(){
         PageFactory.initElements(new AppiumFieldDecorator(Driver.getAndroidDriver(),Duration.ofSeconds(15)),this);
     }
 
-
-    @FindBy (xpath = "//*[@text='E-mail Adresi']")
+    @FindBy(xpath = "(//*[@class='android.widget.EditText'])[1]")
     public MobileElement emailBox;
 
-    @FindBy (xpath = "//*[@text='Şifre']")
+    @FindBy(xpath = "(//*[@class='android.widget.EditText'])[2]")
     public MobileElement passwordBox;
 
+    @FindBy(xpath = "(//*[@class='android.widget.TextView'])[2]")
+    public MobileElement GirisYapButon;
+    //ikisi ayni element locate i
     @FindBy (xpath = "//*[@text=\"Giriş Yap\"]")
     public MobileElement girisYap;
 
@@ -36,8 +36,4 @@ public class AileButcePage {
     public  MobileElement MenuButon;
 
 
-
-
 }
-
-
