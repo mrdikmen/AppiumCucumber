@@ -25,7 +25,9 @@ public class AileButcemPage {
 
     @FindBy(xpath = "(//*[@class='android.widget.TextView'])[2]")
     public MobileElement GirisYapButon;
+
     //ikisi ayni element locate i
+
     @FindBy (xpath = "//*[@text=\"Giriş Yap\"]")
     public MobileElement girisYap;
 

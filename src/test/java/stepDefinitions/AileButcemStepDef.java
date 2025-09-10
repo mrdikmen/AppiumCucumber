@@ -1,6 +1,4 @@
-
 package stepDefinitions;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -44,7 +42,7 @@ public class AileButcemStepDef {
     public void sol_kisimdaki_menuden_bolumune_gidin(String acilacakBolum) throws InterruptedException {
         Thread.sleep(4000);
         page.MenuButon.click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         ResuableMethods.scrollWithUiScrollableAndClick(acilacakBolum);
         //ResuableMethods.scrollWithUiScrollableAndClick("Hesabım");
     }
